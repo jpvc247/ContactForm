@@ -11,4 +11,25 @@
     text-align: center;
   }
 
+  .required-asterisk {
+    color: red; /* Sets the color of the asterisk to red */
+    margin-left: 4px; /* Adds some space between label text and asterisk */
+}
+
+.input-box{
+    padding: 10px 0 10px 0;
+}
+
+#inputwidth{
+    width: 100%;
+}
+
+#namewidth{
+    width: 100%;
+}
+
+#btn{
+    width: 100%;
+}
+
 

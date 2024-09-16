@@ -3,55 +3,50 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
         <form>
             <h2>Contact Us</h2>
 
 
             <div className="container">
                 <div className="input-box">
-                    <label>First Name</label><br />
-                    <input type="text" className='field' placeholder='Enter your name' required />
+                <label>
+                    First Name <span className="required-asterisk">*</span>
+                </label>
+                <br />
+                <input id="namewidth" type="text" className='field' required />
                 </div>
 
                 <div className="input-box">
-                    <label>Last Name</label><br />
-                    <input type="text" className='field' placeholder='Enter your name' required />
+                <label>
+                    Last Name <span className="required-asterisk">*</span>
+                </label>
+                <br />
+                <input id="namewidth" type="text" className='field' required />
                 </div>
 
             </div>
-
-
-            <div className="input-box">
-                <label>Email Address</label><br />
-                <input type="text" className='field' placeholder='Enter your name' required />
-            </div>
-
-
-
-
-            <div className="container">
-                <h3>Query Type</h3>
+               
                 <div className="input-box">
-                    {/* <label>General Enquiry</label><br /> */}
-                    <input type="text" className='field' placeholder='Enter your name' required />
-                    <label className="radio-container">
-                    <input type="radio" name="radio-group" />
-                    <span className="radio-button"></span>
+                    <label id="inputwidth">
+                        Email <span className="required-asterisk">*</span>
                     </label>
+                    <br />
+                    <input id="inputwidth" type="email" className='field' required />
+                
+                </div>
+                <br />
 
+                <div>
+                    <label>Message <span className="required-asterisk">*</span> </label><br />
+                    <textarea rows="8" id="inputwidth" name=""></textarea>
                 </div>
 
-                <div className="input-box">
-                    <label>Support Request</label><br />
-                    <input type="text" className='field' placeholder='Enter your name' required />
+                <br /><br />
+                <div>
+                    <button id="btn" type="submit">Submit</button>
                 </div>
-
-            </div>
-
-           
-
-
+              
         </form>
     </section>
   )
