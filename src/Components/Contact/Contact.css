@@ -1,4 +1,4 @@
- .container {
+.container {
     display: flex;
     gap: 10px;
   }
@@ -32,4 +32,14 @@
     width: 100%;
 }
 
+body{
+    background-color: hsl(148, 38%, 91%);
+}
 
+label{
+    color: black;
+}
+
+#contact{
+    background: white;
+}
